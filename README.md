@@ -1,7 +1,21 @@
 # MagicApp
 A simple to-do list using rest api for iOS.
 
-Now server is running in offline.
+Now server is running in offline. You have to create own server using rest api, for example:
+
+``` http
+POST / HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "login" : "login",
+    "name" : "name",
+    "note" : "note", 
+    "completed" : "completed", 
+    "priority" : "priority"
+}
+```
 
 ## Built with
 * [Xcode 8](https://developer.apple.com/xcode/) - an integrated development environment for macOS containing a suite of software development tools
